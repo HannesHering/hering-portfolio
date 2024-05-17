@@ -6,5 +6,9 @@
                 <line x1="0" y1="0" x2="40" y2="0" stroke="#F6690C" stroke-width="1" />
             </svg>
         </div>
+        <div>
+            <NuxtLink to="/projects/tnt" class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2">View This Project</NuxtLink>
+            <NuxtLink to="/projects/vptracker" class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2">View This Project</NuxtLink>
+        </div>
     </div>
 </template>

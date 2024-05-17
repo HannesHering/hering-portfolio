@@ -24,3 +24,4 @@
     </NuxtLayout>
   </div>
 </template>
+

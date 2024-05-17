@@ -8,3 +8,18 @@
         </div>
     </div>
 </template>
+
+<script>
+
+    export default {
+        head() {
+            console.log("Hallo");
+
+            return {
+                title: 'Homepage - Hering',
+            }
+        }
+    }
+
+</script>
+
