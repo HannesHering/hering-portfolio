@@ -17,8 +17,8 @@
             <div class="flex flex-col items-center justify-center">
                 <div class="text-text-primary font-outfit text-3xl mb-5">VP-Tracker</div>
                 <Carousel />
-                <NuxtLink to="/projects/vptracker" class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5">View This Project</NuxtLink>
                 <div class="w-2/5 font-outfit text-justify mt-5">Der VP-Tracker ist eine praktische Anwendung für Studierende und Universitätsmitarbeitende zur Verwaltung von Versuchspersonenstunden. Mit diesem Tool können Nutzer ihre Teilnahme an Studien einfach erfassen, verwalten und nachverfolgen. Der VP-Tracker bietet eine übersichtliche Benutzeroberfläche, in der sowohl geleistete als auch noch benötigte Stunden angezeigt werden. So behalten alle Beteiligten stets den Überblick über ihren Fortschritt und die Erfüllung der Studienanforderungen.</div>
+                <NuxtLink to="/projects/vptracker" class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5">View This Project</NuxtLink>
             </div>
         </div>
     </div>

@@ -4,4 +4,8 @@ title: "Terror Nightmare Towers - Hering"
 
 # Terror Nightmare Towers
 
-Dies ist ein Sweng Projekt gewesen.
+BILD EINFÜGEN !!!
+
+Dies ist ein Bachelor Projekt gewesen. ...
+
+Datum: 02.08.2023
