@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxt/ui"],
   app: {
     head: {
       title: 'Hering - Portfolio'

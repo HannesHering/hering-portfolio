@@ -1,5 +1,6 @@
 <template>
     <div class="bg-bg-primary text-text-primary p-6">
+        <Title>Portfolio - Hering</Title>
         <div class="font-rekron text-5xl">
             Hering
             <svg class="h-4 mt-2" viewBox="0 0 100 1" xmlns="http://www.w3.org/2000/svg">
@@ -10,16 +11,6 @@
 </template>
 
 <script>
-
-    export default {
-        head() {
-            console.log("Hallo");
-
-            return {
-                title: 'Homepage - Hering',
-            }
-        }
-    }
 
 </script>
 
