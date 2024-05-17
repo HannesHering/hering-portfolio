@@ -17,7 +17,7 @@
               <a href="https://github.com/HannesHering" target="_blank">GitHub</a>
             </li>
             <li class="w-fit mb-10 hover:text-accent-primary">
-              <a href="www.linkedin.com/in/hannes-hering" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/hannes-hering/" target="_blank">LinkedIn</a>
             </li>
           </ul>
       </div>
