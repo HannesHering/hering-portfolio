@@ -9,7 +9,7 @@
         </div>
         <ClientOnly>
                 <Experience />
-            </ClientOnly>
+        </ClientOnly>
     </div>
 </template>
 
