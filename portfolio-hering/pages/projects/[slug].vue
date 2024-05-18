@@ -37,6 +37,10 @@
     }
 
     main :deep(.date) {
-        @apply px-80 mb-5 text-center;
+        @apply px-80 my-2 text-center text-xs;
+    }
+
+    main :deep(.galery) {
+        @apply mb-5 text-center text-2xl;
     }
 </style>

@@ -12,7 +12,7 @@ const items = [
 <template>
   <slot />
   <div class="flex justify-center items-center">
-    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="carousel rounded-lg overflow-hidden w-2/5" indicators>
+    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="carousel rounded-lg overflow-hidden w-2/5" indicators arrows>
       <img :src="item" class="w-full" draggable="false">
     </UCarousel>
   </div>
