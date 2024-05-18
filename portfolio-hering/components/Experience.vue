@@ -8,6 +8,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 let renderer: WebGLRenderer;
 let controls: OrbitControls;
+let model: any;
+let isControlsActive = false;
 
 const experience: Ref<HTMLCanvasElement | null> = ref(null);
 
@@ -31,7 +33,7 @@ scene.add(ambientLight)
 const gltfLoader = new GLTFLoader()
 
 gltfLoader.load('/model/figure-of-a-dancer-150k-4096-web.gltf', gltf => {
-    console.log(gltf)
+    model = gltf.scene
     scene.add(gltf.scene)
 }) 
 
@@ -51,6 +53,13 @@ function setRenderer () {
         renderer.setPixelRatio(window.devicePixelRatio)
         controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true
+        controls.enableZoom = false
+        controls.addEventListener('start', () => {
+            isControlsActive = true;
+        });
+        controls.addEventListener('end', () => {
+            isControlsActive = false;
+        });
         updateRenderer()
     }
 }
@@ -67,6 +76,9 @@ onMounted(() => {
 
 const loop = () => {
     controls.update();
+    if (!isControlsActive && model) {
+        model.rotation.y += 0.01;
+    }
     renderer.render(scene, camera)
     requestAnimationFrame(loop)
 }
