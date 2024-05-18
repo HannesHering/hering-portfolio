@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-bg-primary text-text-primary p-6">
+    <div class="bg-bg-primary text-text-primary p-6 overflow-hidden">
         <Title>Portfolio - Hering</Title>
         <div class="font-rekron text-5xl">
             Hering
@@ -7,6 +7,9 @@
                 <line x1="0" y1="0" x2="40" y2="0" stroke="#F6690C" stroke-width="1" />
             </svg>
         </div>
+        <ClientOnly>
+                <Experience />
+            </ClientOnly>
     </div>
 </template>
 
