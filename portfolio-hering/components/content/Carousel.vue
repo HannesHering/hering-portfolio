@@ -10,7 +10,10 @@ const items = [
 </script>
 
 <template>
-  <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="rounded-lg overflow-hidden w-2/5" indicators>
-    <img :src="item" class="w-full" draggable="false">
-  </UCarousel>
+  <slot />
+  <div class="flex justify-center items-center">
+    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="carousel rounded-lg overflow-hidden w-2/5" indicators>
+      <img :src="item" class="w-full" draggable="false">
+    </UCarousel>
+  </div>
 </template>

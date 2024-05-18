@@ -10,6 +10,33 @@
                 </svg>
             </div>
         </div>
-        <ContentDoc />
+        <div class="content font-outfit text-text-primary text-justify">
+            <ContentDoc />
+        </div>
+        <div class="flex flex-row justify-center my-5 space-x-5">
+            <SocialShare network="facebook" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"/>
+            <SocialShare network="twitter" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"/>
+            <SocialShare network="linkedin" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"/>
+        </div>
+        <div class="h-28">
+        </div>
     </main>
 </template>
+
+<style scoped>
+    main :deep(h1) {
+        @apply w-full flex justify-center items-center text-4xl;
+    }
+
+    main :deep(p) {
+        @apply w-full flex justify-center items-center;
+    }
+
+    main :deep(.mainText) {
+        @apply px-80 mt-10 mb-5 text-justify;
+    }
+
+    main :deep(.date) {
+        @apply px-80 mb-5 text-center;
+    }
+</style>

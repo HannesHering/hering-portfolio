@@ -1,9 +1,6 @@
 <template>
-  <div class="h-full bg-bg-primary">
+  <div class="h-screen bg-bg-primary">
     <NuxtLayout>
-      <div
-        class="w-full h-screen bg-no-repeat bg-center bg-fixed bg-[url('/assets/watermark.png')]"
-      >
         <NuxtPage />
         <div class="fixed left-0 top-0 h-dvh flex flex-col justify-center">
           <ul class="w-fit text-text-primary font-outfit text-4xl mb-10 px-6">
@@ -21,7 +18,6 @@
             </li>
           </ul>
         </div>
-    </div>
     </NuxtLayout>
   </div>
 </template>
