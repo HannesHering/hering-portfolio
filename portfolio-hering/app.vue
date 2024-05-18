@@ -8,7 +8,7 @@
               <NuxtLink to="/">Home</NuxtLink>
             </li>
             <li class="w-fit mb-10 hover:text-accent-primary">
-              <NuxtLink to="/projects">Projects</NuxtLink>
+              <NuxtLink to="/projects">Projekte</NuxtLink>
             </li>
             <li class="w-fit mb-10 hover:text-accent-primary">
               <a href="https://github.com/HannesHering" target="_blank">GitHub</a>

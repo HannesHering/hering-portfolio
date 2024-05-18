@@ -15,9 +15,9 @@
                 <ContentDoc />
             </div>
             <div class="flex flex-row justify-center my-5 space-x-5">
-                <SocialShare network="facebook" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"/>
-                <SocialShare network="twitter" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"/>
-                <SocialShare network="linkedin" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"/>
+                <SocialShare network="facebook" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary" :label="false"/>
+                <SocialShare network="twitter" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary" :label="false"/>
+                <SocialShare network="linkedin" class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary" :label="false"/>
             </div>
             <div class="h-28">
             </div>

@@ -77,7 +77,7 @@ onMounted(() => {
 const loop = () => {
     controls.update();
     if (!isControlsActive && model) {
-        model.rotation.y += 0.01;
+        model.rotation.y -= 0.01;
     }
     renderer.render(scene, camera)
     requestAnimationFrame(loop)
