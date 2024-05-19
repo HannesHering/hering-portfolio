@@ -10,6 +10,7 @@
         <ClientOnly>
                 <Experience />
         </ClientOnly>
+        <BackToTheTop />
     </div>
 </template>
 
