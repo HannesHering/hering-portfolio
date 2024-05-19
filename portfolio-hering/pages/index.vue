@@ -14,7 +14,7 @@
     <ClientOnly>
       <Experience />
     </ClientOnly>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center mt-6">
       <div class="flex flex-row justify-center">
         <div class="w-1/2 h-full flex flex-col">
           <div
