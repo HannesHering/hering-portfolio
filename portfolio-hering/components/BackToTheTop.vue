@@ -1,13 +1,13 @@
 <template>
-    <div>
-      <!-- Deine vorhandenen Inhalte hier -->
-  
-      <!-- Back-to-the-Top Knopf -->
-      <button
-        @click="scrollToTop"
-        v-show="scrollPosition > 300"
-        class="fixed bottom-8 right-8 bg-text-primary text-bg-primary px-4 py-2 rounded-md hover:bg-accent-primary transition-all duration-300"
-      >
+  <div>
+    <!-- Deine vorhandenen Inhalte hier -->
+
+    <!-- Back-to-the-Top Knopf -->
+    <button
+      @click="scrollToTop"
+      v-show="scrollPosition > 300"
+      class="fixed bottom-8 right-8 bg-text-primary text-bg-primary px-4 py-2 rounded-md hover:bg-accent-primary transition-all duration-300"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6"
@@ -22,40 +22,38 @@
           d="M5 15l7-7 7 7"
         />
       </svg>
-      </button>
-    </div>
-  </template>
-  
-  <script setup lang="ts">
-  import { ref, onMounted, onUnmounted } from 'vue';
-  
-  // Zustandsvariable, um die aktuelle Scrollposition zu speichern
-  const scrollPosition = ref(0);
-  
-  // Funktion, um zum oberen Rand der Seite zu scrollen
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Scrollt sanft zum oberen Rand
-    });
-  };
-  
-  // Event-Handler zum Aktualisieren der Scrollposition
-  const updateScrollPosition = () => {
-    scrollPosition.value = window.scrollY || document.documentElement.scrollTop;
-  };
-  
-  // Füge Event-Listener beim Mounten der Komponente hinzu
-  onMounted(() => {
-    window.addEventListener('scroll', updateScrollPosition);
+    </button>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
+
+// Zustandsvariable, um die aktuelle Scrollposition zu speichern
+const scrollPosition = ref(0);
+
+// Funktion, um zum oberen Rand der Seite zu scrollen
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Scrollt sanft zum oberen Rand
   });
-  
-  // Entferne Event-Listener beim Entfernen der Komponente
-  onUnmounted(() => {
-    window.removeEventListener('scroll', updateScrollPosition);
-  });
-  </script>
-  
-  <style scoped>
-  
-  </style>
+};
+
+// Event-Handler zum Aktualisieren der Scrollposition
+const updateScrollPosition = () => {
+  scrollPosition.value = window.scrollY || document.documentElement.scrollTop;
+};
+
+// Füge Event-Listener beim Mounten der Komponente hinzu
+onMounted(() => {
+  window.addEventListener("scroll", updateScrollPosition);
+});
+
+// Entferne Event-Listener beim Entfernen der Komponente
+onUnmounted(() => {
+  window.removeEventListener("scroll", updateScrollPosition);
+});
+</script>
+
+<style scoped></style>
