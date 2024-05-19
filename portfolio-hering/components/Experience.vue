@@ -23,7 +23,7 @@ const scene = new Scene();
 scene.background = bgColor
 
 const camera = new PerspectiveCamera(75, aspectRatio.value, 0.1, 1000)
-camera.position.set(0, 2, 450);
+camera.position.set(0, 0, 450);
 
 scene.add(camera);
 
@@ -43,7 +43,7 @@ function updateCamera() {
 }
 
 function updateRenderer() {
-    renderer.setSize(width.value, height.value);
+    renderer.setSize(width.value, 800); //Größe einstellen (grad nicht responsive, für responsive = height.value)
     renderer.render(scene, camera);
 }
 

@@ -6,7 +6,7 @@
       <button
         @click="scrollToTop"
         v-show="scrollPosition > 300"
-        class="fixed bottom-8 right-8 bg-text-primary text-bg-primary px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-all duration-300"
+        class="fixed bottom-8 right-8 bg-text-primary text-bg-primary px-4 py-2 rounded-md hover:bg-accent-primary transition-all duration-300"
       >
       <svg
         xmlns="http://www.w3.org/2000/svg"
