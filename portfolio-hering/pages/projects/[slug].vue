@@ -22,7 +22,7 @@
           </svg>
         </div>
       </div>
-      <div class="content font-outfit text-text-primary text-justify">
+      <div class="w-full font-outfit text-text-primary text-justify">
         <ContentDoc />
       </div>
       <div class="flex flex-row justify-center my-5 space-x-5">
@@ -48,6 +48,11 @@
 </template>
 
 <style scoped>
+
+main :deep(.containermd) {
+  @apply w-full flex-col flex justify-center items-center;
+}
+
 main :deep(h1) {
   @apply w-full flex justify-center items-center text-4xl;
 }
@@ -57,14 +62,14 @@ main :deep(p) {
 }
 
 main :deep(.mainText) {
-  @apply px-80 mt-10 mb-5 text-justify;
+  @apply  flex flex-col w-1/2 text-justify justify-center items-center;
 }
 
 main :deep(.date) {
-  @apply px-80 my-2 text-center text-xs;
+  @apply mt-2 mb-5 text-center text-sm;
 }
 
 main :deep(.galery) {
-  @apply mb-5 text-center text-2xl;
+  @apply mb-5 mt-10 text-center text-2xl;
 }
 </style>

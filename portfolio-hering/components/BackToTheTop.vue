@@ -3,7 +3,7 @@
     <!-- Deine vorhandenen Inhalte hier -->
 
     <!-- Back-to-the-Top Knopf -->
-    <button
+    <div
       @click="scrollToTop"
       v-show="scrollPosition > 300"
       class="fixed bottom-8 right-8 bg-text-primary text-bg-primary px-4 py-2 rounded-md hover:bg-accent-primary transition-all duration-300"
@@ -22,7 +22,7 @@
           d="M5 15l7-7 7 7"
         />
       </svg>
-    </button>
+    </div>
   </div>
 </template>
 

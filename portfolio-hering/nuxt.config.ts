@@ -12,7 +12,10 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@stefanobartoletti/nuxt-social-share"],
   app: {
     head: {
-      title: 'Hering - Portfolio'
+      title: 'Hering - Portfolio',
+      htmlAttrs: {
+        lang: 'de'
+      }
     }
   }
 })

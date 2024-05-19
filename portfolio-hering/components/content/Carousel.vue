@@ -16,7 +16,7 @@ const items = [
       v-slot="{ item }"
       :items="items"
       :ui="{ item: 'basis-full' }"
-      class="carousel rounded-lg overflow-hidden w-2/5"
+      class="carousel rounded-lg overflow-hidden"
       indicators
       arrows
     >

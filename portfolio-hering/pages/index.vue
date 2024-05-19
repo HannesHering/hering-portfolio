@@ -88,7 +88,7 @@
         </div>
         <img
           src="../assets/images/StudentPageCropped.png"
-          alt="VP-Tracker Student-Page Image"
+          alt="VP-Tracker Student-Page Picture"
           class="w-1/5 h-1/6"
         />
       </div>
