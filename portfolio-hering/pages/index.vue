@@ -14,6 +14,61 @@
     <ClientOnly>
       <Experience />
     </ClientOnly>
+    <div class="flex justify-center items-center mb-28">
+      <div class="relative w-full max-w-4xl">
+        <!-- Left Line -->
+        <svg
+          class="absolute left-0 top-1/2 transform -translate-y-1/2"
+          height="100"
+          width="400"
+        >
+          <line
+            x1="0"
+            y1="52"
+            x2="400"
+            y2="52"
+            style="stroke: #f6690c; stroke-width: 4"
+          />
+        </svg>
+
+        <!-- Right Line -->
+        <svg
+          class="absolute right-0 top-1/2 transform -translate-y-1/2"
+          height="100"
+          width="400"
+        >
+          <line
+            x1="0"
+            y1="52"
+            x2="400"
+            y2="52"
+            style="stroke: #f6690c; stroke-width: 4"
+          />
+        </svg>
+
+        <!-- Chevron-down -->
+        <svg
+          class="absolute left-1/2 transform -translate-x-1/2"
+          height="100"
+          width="100"
+        >
+          <line
+            x1="0"
+            y1="0"
+            x2="50"
+            y2="49"
+            style="stroke: #f6690c; stroke-width: 4"
+          />
+          <line
+            x1="50"
+            y1="52"
+            x2="100"
+            y2="0"
+            style="stroke: #f6690c; stroke-width: 4"
+          />
+        </svg>
+      </div>
+    </div>
     <div class="flex flex-col items-center mt-6">
       <div class="flex flex-row justify-center">
         <div class="w-1/2 h-full flex flex-col">
