@@ -52,7 +52,7 @@ function updateCamera() {
 }
 
 function updateRenderer() {
-  renderer.setSize(width.value, 800); //Größe einstellen (grad nicht responsive, für responsive = height.value)
+  renderer.setSize(width.value, 785); //Größe einstellen (grad nicht responsive, für responsive = height.value)
   renderer.render(scene, camera);
 }
 
