@@ -46,7 +46,6 @@
           alt="Terror Nightmare Towers Image"
           class="w-1/3 h-1/5"
         />
-        <!-- <Carousel /> -->
         <div class="w-2/5 font-outfit text-justify mt-5">
           Der VP-Tracker ist eine praktische Anwendung für Studierende und
           Universitätsmitarbeitende zur Verwaltung von Versuchspersonenstunden.

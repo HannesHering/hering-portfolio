@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- Deine vorhandenen Inhalte hier -->
-
-    <!-- Scroll Knopf -->
     <div
       @click="handleScroll"
       v-show="scrollPosition > 0 || scrollPosition === 0"
@@ -45,35 +42,30 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 
-// Zustandsvariable, um die aktuelle Scrollposition zu speichern
 const scrollPosition = ref(0);
 
-// Funktion, um zum oberen Rand der Seite zu scrollen oder nach unten zu einem Punkt
 const handleScroll = () => {
   if (scrollPosition.value > 300) {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Scrollt sanft zum oberen Rand
+      behavior: "smooth", 
     });
   } else {
     window.scrollTo({
-      top: 950, // Der Punkt, zu dem nach unten gescrollt wird
-      behavior: "smooth", // Scrollt sanft nach unten
+      top: 950, // scrolltiefe
+      behavior: "smooth",
     });
   }
 };
 
-// Event-Handler zum Aktualisieren der Scrollposition
 const updateScrollPosition = () => {
   scrollPosition.value = window.scrollY || document.documentElement.scrollTop;
 };
 
-// Füge Event-Listener beim Mounten der Komponente hinzu
 onMounted(() => {
   window.addEventListener("scroll", updateScrollPosition);
 });
 
-// Entferne Event-Listener beim Entfernen der Komponente
 onUnmounted(() => {
   window.removeEventListener("scroll", updateScrollPosition);
 });
