@@ -36,7 +36,7 @@ camera.position.set(0, 0, 450);
 
 scene.add(camera);
 
-const ambientLight = new AmbientLight(0xffffff, 0.8);
+const ambientLight = new AmbientLight(0xE4DFDA, 1);
 scene.add(ambientLight);
 
 const gltfLoader = new GLTFLoader();
