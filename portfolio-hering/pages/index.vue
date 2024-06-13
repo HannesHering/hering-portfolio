@@ -94,17 +94,12 @@
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </div>
-          <button
-            @click="redirectToEmail"
-            class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
-          >
-            Kontaktiere mich
-          </button>
+          <Contactform />
         </div>
         <img
           src="../assets/images/placeholderprofile.png"
           alt="Hannes Hering Profile Picture"
-          class="w-1/5 h-1/6"
+          class="w-1/5 h-1/6 p-4"
         />
       </div>
       <div class="h-48"></div>
@@ -144,7 +139,7 @@
         <img
           src="../assets/images/StudentPageCropped.png"
           alt="VP-Tracker Student-Page Picture"
-          class="w-1/5 h-1/6"
+          class="w-1/5 h-1/6 p-4"
         />
       </div>
     </div>

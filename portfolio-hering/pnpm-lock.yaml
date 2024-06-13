@@ -14,18 +14,27 @@ dependencies:
   '@stefanobartoletti/nuxt-social-share':
     specifier: ^0.7.0
     version: 0.7.0
+  '@vee-validate/zod':
+    specifier: ^4.13.1
+    version: 4.13.1(vue@3.4.27)
   '@vueuse/core':
     specifier: ^10.9.0
     version: 10.9.0(vue@3.4.27)
   nuxt:
     specifier: ^3.11.2
     version: 3.11.2(@opentelemetry/api@1.8.0)(@unocss/reset@0.60.2)(floating-vue@5.2.2)(unocss@0.60.2)(vite@5.2.11)
+  vee-validate:
+    specifier: ^4.13.1
+    version: 4.13.1(vue@3.4.27)
   vue:
     specifier: ^3.4.27
     version: 3.4.27
   vue-router:
     specifier: ^4.3.2
     version: 4.3.2(vue@3.4.27)
+  zod:
+    specifier: ^3.23.8
+    version: 3.23.8
 
 devDependencies:
   '@types/three':
@@ -2446,6 +2455,16 @@ packages:
       vite: 5.2.11
     transitivePeerDependencies:
       - rollup
+    dev: false
+
+  /@vee-validate/zod@4.13.1(vue@3.4.27):
+    resolution: {integrity: sha512-8QLhY1vFNURT5rJF9GK34Rf9I/4Fx7CmF1rWeLEOYDshLzX0IxD6ByVEnIDl96Bu90A3wJSsZiXZNiv/yOyLbQ==}
+    dependencies:
+      type-fest: 4.20.0
+      vee-validate: 4.13.1(vue@3.4.27)
+      zod: 3.23.8
+    transitivePeerDependencies:
+      - vue
     dev: false
 
   /@vercel/nft@0.26.5:
@@ -8084,6 +8103,11 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
+  /type-fest@4.20.0:
+    resolution: {integrity: sha512-MBh+PHUHHisjXf4tlx0CFWoMdjx8zCMLJHOjnV1prABYZFHqtFOyauCIK2/7w4oIfwkF8iNhLtnJEfVY2vn3iw==}
+    engines: {node: '>=16'}
+    dev: false
+
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -8459,6 +8483,16 @@ packages:
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /vee-validate@4.13.1(vue@3.4.27):
+    resolution: {integrity: sha512-JAlUWTBHg0z66n+v66mrtE9IC1xmVCggzpyc7UXCNkizVok8Zgt1VAVjobSxA/0N19Zn6v6hRfjoYciYH/Z11Q==}
+    peerDependencies:
+      vue: ^3.4.26
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      type-fest: 4.20.0
+      vue: 3.4.27
     dev: false
 
   /vfile-location@5.0.2:
@@ -8922,6 +8956,10 @@ packages:
       archiver-utils: 5.0.2
       compress-commons: 6.0.2
       readable-stream: 4.5.2
+    dev: false
+
+  /zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
     dev: false
 
   /zwitch@2.0.4:
