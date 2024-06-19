@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-bg-primary text-text-primary p-6 overflow-hidden">
+  <div class=" bg-bg-primary text-text-primary p-6 overflow-hidden">
     <Title>Portfolio - Hering</Title>
     <div class="font-rekron text-5xl">
-      Hering
+      {{ $t("Hering") }}
       <svg
         class="h-4 mt-2"
         viewBox="0 0 100 1"
@@ -120,18 +120,9 @@
           >
             Verwaltungssoftware für Versuchspersonenstunden
           </div>
-          <div class="w-full text-text-primary font-outfit text-xl text-left">
-            Der VP-Tracker ist eine praktische Anwendung für Studierende und
-            Universitätsmitarbeitende zur Verwaltung von
-            Versuchspersonenstunden. Mit diesem Tool können Nutzer ihre
-            Teilnahme an Studien einfach erfassen, verwalten und nachverfolgen.
-            Der VP-Tracker bietet eine übersichtliche Benutzeroberfläche, in der
-            sowohl geleistete als auch noch benötigte Stunden angezeigt werden.
-            So behalten alle Beteiligten stets den Überblick über ihren
-            Fortschritt und die Erfüllung der Studienanforderungen.
-          </div>
+          <div class="w-full text-text-primary font-outfit text-xl text-left">{{ projects[1].desc }}</div>
           <NuxtLink
-            to="/projects/vptracker"
+            :to="localePath('/projects/vptracker')"
             class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
             >Projekt ansehen</NuxtLink
           >
@@ -142,18 +133,23 @@
           class="w-1/5 h-1/6 p-4"
         />
       </div>
+      <LanguageSwitcher />
     </div>
     <div class="h-48"></div>
     <BackToTheTop />
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  methods: {
-    redirectToEmail() {
-      window.location.href = "mailto:h.hering@student.uni-luebeck.de";
-    },
-  },
-};
+<script setup lang="ts">
+
+import { useI18n } from "vue-i18n";
+const i18nLocale = useI18n();
+
+const projects = await queryContent(i18nLocale.locale.value + "/projects")
+    .sort({ date: -1 })
+    .where({ _partial: false })
+    .find();
+
+const localePath = useLocalePath()
+
 </script>

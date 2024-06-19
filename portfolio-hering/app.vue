@@ -7,12 +7,12 @@
           <li
             class="w-fit mb-10 hover:text-accent-primary transition-all duration-300"
           >
-            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink :to="localePath('/')">{{ $t("home") }}</NuxtLink>
           </li>
           <li
             class="w-fit mb-10 hover:text-accent-primary transition-all duration-300"
           >
-            <NuxtLink to="/projects">Projekte</NuxtLink>
+            <NuxtLink :to="localePath('/projects')">{{ $t("projects") }}</NuxtLink>
           </li>
           <li
             class="w-fit mb-10 hover:text-accent-primary transition-all duration-300"
@@ -31,3 +31,9 @@
     </NuxtLayout>
   </div>
 </template>
+
+<script setup>
+
+const localePath = useLocalePath()
+
+</script>

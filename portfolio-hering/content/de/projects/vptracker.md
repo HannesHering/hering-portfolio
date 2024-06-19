@@ -1,5 +1,14 @@
 ---
 title: "VP-Tracker - Hering"
+desc: "Der VP-Tracker ist eine praktische Anwendung für Studierende und
+          Universitätsmitarbeitende zur Verwaltung von Versuchspersonenstunden.
+          Mit diesem Tool können Nutzer ihre Teilnahme an Studien einfach
+          erfassen, verwalten und nachverfolgen. Der VP-Tracker bietet eine
+          übersichtliche Benutzeroberfläche, in der sowohl geleistete als auch
+          noch benötigte Stunden angezeigt werden. So behalten alle Beteiligten
+          stets den Überblick über ihren Fortschritt und die Erfüllung der
+          Studienanforderungen."
+src: "../../assets/images/StudentPageCropped.png"
 ---
 
 <div class="containermd">

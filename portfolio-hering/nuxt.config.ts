@@ -9,7 +9,30 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content", "@nuxt/ui", "@stefanobartoletti/nuxt-social-share"],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/ui",
+    "@stefanobartoletti/nuxt-social-share",
+    "@nuxtjs/i18n",
+  ],
+  i18n: {
+    lazy: true,
+    langDir: "locales",
+    defaultLocale: 'de',
+    strategy: "prefix",
+    locales: [
+      {
+        code: "de",
+        name: "German",
+        file: "de-DE.json"
+      },
+      {
+        code: "en",
+        name: "English",
+        file: "en-US.json"
+      }
+    ]
+  },
   app: {
     head: {
       title: 'Hering - Portfolio',
