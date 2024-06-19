@@ -25,7 +25,7 @@
         <NuxtLink
           :to="localePath('/projects/tnt')"
           class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5 mb-16 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
-          >Projekt ansehen</NuxtLink
+          >{{ $t("viewProject") }}</NuxtLink
         >
       </div>
       <div class="flex flex-col items-center justify-center">
@@ -41,7 +41,7 @@
         <NuxtLink
           :to="localePath('/projects/vptracker')"
           class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
-          >Projekt ansehen</NuxtLink
+          >{{ $t("viewProject") }}</NuxtLink
         >
       </div>
       <BackToTheTop />

@@ -1,5 +1,13 @@
 {
     "welcome": "Welcome",
     "projects": "Projects",
-    "home": "Home"
+    "project": "Project",
+    "home": "Home",
+    "greeting":  "Hi, my name is",
+    "job": "Media Informatics student at the University of Lübeck",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit",
+    "trackerdesc": "Administration software for participation hours",
+    "viewProject": "View Project"
 }

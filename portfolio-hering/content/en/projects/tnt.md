@@ -1,20 +1,25 @@
 ---
 title: "Terror Nightmare Towers - Hering"
+desc: "Terror Nightmare Towers is a horror board game based on the popular game Santorini. In this dark version, players build towers in a nightmare-haunted city. While strategically constructing towers, you must fight against ghostly creatures and supernatural traps. Use special abilities to withstand the horrors and become the best builder of the Terror Nightmare Towers!"
 ---
 
 <div class="containermd">
 <h1>Terror Nightmare Towers</h1>
 <div class="date">
-Erscheinungsdatum: 02.08.2023
+Release Date: 08/02/2023
 </div>
 
 <div class="mainText">
-Terror Nightmare Towers (TNT) ist ein faszinierendes Horror-Brettspiel, das im Rahmen eines Praktikumsmoduls für Software Engineering entstanden ist. Dieses innovative Projekt wurde von einem engagierten Team von Studierenden entwickelt, die ihre Programmier- und Designfähigkeiten in die Praxis umsetzen wollten. 
+Terror Nightmare Towers (TNT) is a fascinating horror board game developed as part of a software engineering internship module. This innovative project was created by a dedicated team of students who wanted to put their programming and design skills into practice. 
 </br> </br>
-TNT ist inspiriert vom beliebten Spiel Santorini, jedoch mit einer düsteren und gruseligen Wendung. Die Spieler finden sich in einer alptraumhaften Stadt wieder, die von geisterhaften Kreaturen und übernatürlichen Fallen heimgesucht wird. Ihre Aufgabe ist es, inmitten dieses Schreckens Türme zu errichten und strategisch zu platzieren. Das Spiel bietet eine intensive Mischung aus Strategie und Horror. Während die Spieler ihre Türme bauen, müssen sie gleichzeitig gegen die ständig drohenden Gefahren ankämpfen. Geisterhafte Wesen und mysteriöse Ereignisse stellen ihre Fähigkeiten und Nerven auf die Probe. Jeder Zug muss sorgfältig geplant werden, um den Fallen zu entkommen und die Konkurrenz zu überlisten. </br> </br> TNT zeichnet sich durch seine innovativen Spielmechaniken aus. Die Spieler können spezielle Fähigkeiten einsetzen, um sich gegen die Schrecken zu wehren und Vorteile im Spiel zu erlangen. Diese Fähigkeiten müssen klug eingesetzt werden, um den größten Nutzen daraus zu ziehen und die Gegner zu übertrumpfen. Das Spiel besticht nicht nur durch seine spannende Thematik, sondern auch durch sein eindrucksvolles Design. Die detailreich gestalteten Spielmaterialien und die stimmungsvolle Atmosphäre tragen dazu bei, dass die Spieler vollständig in die Welt der Terror Nightmare Towers eintauchen können. Terror Nightmare Towers ist ein beeindruckendes Beispiel dafür, wie kreative Ideen und technische Fertigkeiten im Rahmen eines Software Engineering Praktikums zu einem einzigartigen und fesselnden Brettspiel verschmelzen können. Es zeigt, wie interdisziplinäres Arbeiten und innovative Ansätze zu außergewöhnlichen Spielerlebnissen führen können.
+TNT is inspired by the popular game Santorini, but with a dark and eerie twist. Players find themselves in a nightmarish city haunted by ghostly creatures and supernatural traps. Their task is to build and strategically place towers amidst this terror. The game offers an intense mix of strategy and horror. While building their towers, players must simultaneously fight against the ever-present dangers. Ghostly beings and mysterious events test their skills and nerves. Every move must be carefully planned to avoid traps and outsmart the competition.
+</br> </br>
+TNT stands out for its innovative game mechanics. Players can use special abilities to defend against the horrors and gain advantages in the game. These abilities must be used wisely to maximize their benefits and outmaneuver opponents. The game impresses not only with its thrilling theme but also with its striking design. The intricately designed game materials and atmospheric setting help players fully immerse themselves in the world of Terror Nightmare Towers.
+
+Terror Nightmare Towers is an impressive example of how creative ideas and technical skills can merge into a unique and captivating board game within the framework of a software engineering internship. It shows how interdisciplinary work and innovative approaches can lead to extraordinary gaming experiences.
 
 <div class="galery">
-Galerie
+Galery
 </div>
 <Carousel></Carousel>
 

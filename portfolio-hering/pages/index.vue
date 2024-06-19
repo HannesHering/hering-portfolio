@@ -75,7 +75,7 @@
           <div
             class="w-full text-text-primary font-outfit text-2xl text-start mb-2"
           >
-            Hi, ich bin
+            {{ $t("greeting") }}
           </div>
           <div
             class="w-full text-accent-primary font-outfit text-3xl text-left"
@@ -85,7 +85,7 @@
           <div
             class="w-full text-text-primary font-outfit text-1xl text-left mb-3"
           >
-            Medieninformatik-Student an der Universität zu Lübeck
+            {{ $t("job") }}
           </div>
           <div class="w-full text-text-primary font-outfit text-xl text-left">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -108,7 +108,7 @@
           <div
             class="w-full text-text-primary font-outfit text-2xl text-start mb-2"
           >
-            Projekt-Spotlight
+            {{ $t("project") }}-Spotlight
           </div>
           <div
             class="w-full text-accent-primary font-outfit text-3xl text-left"
@@ -118,13 +118,13 @@
           <div
             class="w-full text-text-primary font-outfit text-1xl text-left mb-3"
           >
-            Verwaltungssoftware für Versuchspersonenstunden
+            {{ $t("trackerdesc") }}
           </div>
           <div class="w-full text-text-primary font-outfit text-xl text-left">{{ projects[1].desc }}</div>
           <NuxtLink
             :to="localePath('/projects/vptracker')"
             class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
-            >Projekt ansehen</NuxtLink
+            >{{ $t("viewProject") }}</NuxtLink
           >
         </div>
         <img
