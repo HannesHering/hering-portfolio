@@ -1,53 +1,56 @@
-<script setup>
-import { ref } from 'vue';
-import { useForm } from "vee-validate";
-import { toTypedSchema } from "@vee-validate/zod";
-import { z } from "zod";
-
-// Setup form validation schema
-const { errors, defineField, handleSubmit } = useForm({
+<script setup lang="ts">
+import { Form, Field, ErrorMessage } from 'vee-validate';
+import { toTypedSchema } from '@vee-validate/zod';
+import * as zod from 'zod';
+/* 
+const { errors, defineField } = useForm({
   validationSchema: toTypedSchema(
     z.object({
-      email: z.string().min(1, "Email is required").email("Invalid email"),
-      subject: z.string().min(1, "Subject is required"),
-      message: z.string().min(30, "Message must be at least 30 characters long"),
-    })
+      email: z.string().min(1, 'E-Mail-Adresse erforderlich').email('Ungültige E-Mail-Adresse'),
+      message: z.string().min(30, 'Nachricht muss mindestens 30 Zeichen lang sein'),
+    }),
   ),
-});
+}); */
 
-// Define form fields
-const [email, emailAttrs] = defineField("email");
-const [subject, subjectAttrs] = defineField("subject");
-const [message, messageAttrs] = defineField("message");
+const validationSchema = toTypedSchema(
+  zod.object({
+    email: zod.string().min(1, { message: 'E-Mail erforderlich' }).email({ message: 'Muss eine gültige E-Mail-Adresse sein' }),
+    subject: zod.string(),
+    message: zod.string().min(1, { message: 'Nachricht erforderlich' }).min(30, { message: 'Nachricht muss 30 Zeichen lang sein' }),
+  })
+);
 
-// Submit function to handle form submission
-const onSubmit = handleSubmit((values) => {
-  console.log(values);
-});
+async function onSubmit(values: any, { resetForm }: any) {
+  await $fetch('/api/contact', {
+    method: 'post',
+    body: values,
+  })
+  resetForm();
+}
+
 </script>
 
 <template>
-  <form @submit.prevent="onSubmit">
+  <Form :validation-schema="validationSchema" id="form" @submit="onSubmit">
     <div class="flex flex-col">
       <label for="email">E-Mail</label>
-      <input id="email" v-model="email" v-bind="emailAttrs" />
-      <div>{{ errors.email }}</div>
+      <Field id="email" name="email" type="email"/>
+      <ErrorMessage name="email"/>
     </div>
     <div class="flex flex-col">
       <label for="subject">Betreff</label>
-      <input id="subject" v-model="subject" v-bind="subjectAttrs" />
-      <div>{{ errors.subject }}</div>
+      <Field id="subject" name="subject"/>
     </div>
     <div class="flex flex-col">
       <label for="message">Nachricht</label>
-      <input id="message" v-model="message" v-bind="messageAttrs" />
-      <div>{{ errors.message }}</div>
+      <Field id="message" name="message" class="h-32"/>
+      <ErrorMessage name="message"/>
     </div>
     <button
-      type="submit"
       class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
     >
       Absenden
     </button>
-  </form>
+  </Form>
 </template>
+
