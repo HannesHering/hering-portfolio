@@ -1,8 +1,9 @@
 <template>
   <div class=" bg-bg-primary text-text-primary p-6 overflow-hidden">
     <Title>Portfolio - Hering</Title>
-    <div class="font-rekron text-5xl">
-      {{ $t("Hering") }}
+    <div class="flex flex-row">
+      <div class="font-rekron text-5xl">
+        {{ $t("Hering") }}
       <svg
         class="h-4 mt-2"
         viewBox="0 0 100 1"
@@ -10,6 +11,8 @@
       >
         <line x1="0" y1="0" x2="40" y2="0" stroke="#F6690C" stroke-width="1" />
       </svg>
+      </div>
+      <LanguageSwitcher />
     </div>
     <ClientOnly>
       <Experience />
@@ -133,7 +136,6 @@
           class="w-1/5 h-1/6 p-4"
         />
       </div>
-      <LanguageSwitcher />
     </div>
     <div class="h-48"></div>
     <BackToTheTop />

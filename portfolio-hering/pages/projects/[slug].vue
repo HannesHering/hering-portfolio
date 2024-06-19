@@ -62,7 +62,7 @@ main :deep(p) {
 }
 
 main :deep(.mainText) {
-  @apply  flex flex-col w-1/2 text-justify justify-center items-center;
+  @apply  flex flex-col w-1/2 text-justify text-lg justify-center items-center;
 }
 
 main :deep(.date) {

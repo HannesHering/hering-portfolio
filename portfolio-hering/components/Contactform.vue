@@ -41,23 +41,23 @@ const localePath = useLocalePath()
 </script>
 
 <template>
-  <Form :validation-schema="validationSchema" id="form" @submit="onSubmit">
+  <Form :validation-schema="validationSchema" id="form" @submit="onSubmit" class="font-outfit text-lg mt-5">
     <div class="flex flex-col">
       <label for="email">E-Mail</label>
       <Field id="email" name="email" type="email"/>
       <ErrorMessage name="email"/>
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col mt-2">
       <label for="subject">{{ $t("subject") }}</label>
       <Field id="subject" name="subject"/>
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col mt-2">
       <label for="message">{{ $t("message") }}</label>
       <Field id="message" name="message" class="h-32"/>
       <ErrorMessage name="message"/>
     </div>
     <button
-      class="text-bg-primary bg-text-primary font-outfit font-bold border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
+      class="text-bg-primary bg-text-primary font-outfit font-bold text-base border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
     >
       {{ $t("submit") }}
     </button>
