@@ -6,3 +6,10 @@ export const contactRequest = sqliteTable('contactRequest', {
   subject: text('subject'),
   message: text('message').notNull(),
 });
+
+export const commentRequest = sqliteTable('commentRequest', {
+  id: integer('id').primaryKey({ autoIncrement: true }),
+  name: text('name'),
+  message: text('message').notNull(),
+  project: text('project')
+});

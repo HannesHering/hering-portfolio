@@ -17,9 +17,3 @@ export default defineEventHandler(async (event) => {
         message: body.message
      }
 }) 
-
-/* export default defineEventHandler((event) => {
-    return {
-        hello: 'world'
-    }
-}) */

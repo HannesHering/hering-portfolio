@@ -42,6 +42,7 @@
           :label="false"
         />
       </div>
+      <CommentSection/>
       <div class="h-28"></div>
     </div>
   </main>
