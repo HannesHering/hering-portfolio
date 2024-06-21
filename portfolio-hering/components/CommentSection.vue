@@ -97,7 +97,7 @@ const props = defineProps<{ data:string }>()
       <h2>{{ $t("comments") }}</h2>
       <ul>
         <li v-for="comment in comments" :key="comment.id">
-            <div v-if="comment.project == routePath.project">
+            <div v-if="comment.project == routePath.project" class="font-outfit">
                 <strong>{{ comment.name }}:</strong> {{ comment.message }}
             </div>
         </li>
