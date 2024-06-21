@@ -13,3 +13,13 @@ export const commentRequest = sqliteTable('commentRequest', {
   message: text('message').notNull(),
   project: text('project')
 });
+
+export const likesVptracker = sqliteTable('likesVptracker', {
+  id: integer('id').primaryKey({ autoIncrement: true }),
+  likes: integer('likes').default(0),
+});
+
+export const likesTnt = sqliteTable('likesTnt', {
+  id: integer('id').primaryKey({ autoIncrement: true }),
+  likes: integer('likes').default(0),
+});

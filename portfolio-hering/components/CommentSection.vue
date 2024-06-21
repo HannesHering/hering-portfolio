@@ -64,9 +64,6 @@ const comments = computedAsync(async () => {
   }
 })
 
-
-const props = defineProps<{ data:string }>()
-
 </script>
 
 <template>

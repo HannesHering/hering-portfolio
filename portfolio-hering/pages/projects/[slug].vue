@@ -25,22 +25,23 @@
       <div class="w-full font-outfit text-text-primary text-justify">
         <ContentDoc />
       </div>
-      <div class="flex flex-row justify-center my-5 space-x-5">
+      <div class="w-full flex flex-row justify-center my-5 space-x-5">
         <SocialShare
           network="facebook"
-          class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"
+          class="w-12 flex items-center justify-center border rounded-md p-2 fill-text-primary border-accent-primary hover:bg-accent-primary"
           :label="false"
         />
         <SocialShare
           network="twitter"
-          class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"
+          class="w-12 flex items-center justify-center border rounded-md p-2 fill-text-primary border-accent-primary hover:bg-accent-primary"
           :label="false"
         />
         <SocialShare
           network="linkedin"
-          class="border rounded-md p-2 border-accent-primary hover:bg-accent-primary"
+          class="w-12 flex items-center justify-center border rounded-md p-2 fill-text-primary border-accent-primary hover:bg-accent-primary"
           :label="false"
         />
+        <LikeButton />
       </div>
       <CommentSection/>
       <div class="h-28"></div>
