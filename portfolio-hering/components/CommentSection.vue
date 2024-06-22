@@ -7,7 +7,7 @@ import { computedAsync } from "@vueuse/core";
 
 const validationSchema = toTypedSchema(
   zod.object({
-    name: zod.string(),
+    name: zod.string().default(" "),
     message: zod.string().min(1, { message: "Nachricht erforderlich" }),
   })
 );
@@ -16,6 +16,9 @@ const route = useRoute();
 const routePath = {project: route.path.slice(3)};
 
 async function onSubmit(values: any, { resetForm, setErrors }: any) {
+    if(values.name == " ") {
+      values.name = "Anonymous"
+    }
     values = {...values, ...routePath}
   try {
     const response = await fetch("/api/comment", {
