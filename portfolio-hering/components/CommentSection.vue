@@ -66,7 +66,7 @@ const comments = computedAsync(async () => {
 
 <template>
   <div class="w-full flex flex-col justify-center items-center">
-    <div class="w-2/5 flex flex-col items-center justify-center">
+    <div class="w-1/2 flex flex-col items-center justify-center">
       <Form
         :validation-schema="validationSchema"
         id="form"
@@ -95,7 +95,7 @@ const comments = computedAsync(async () => {
         </button>
       </Form>
     </div>
-    <div class="flex flex-col w-2/5 mt-10 font-outfit">
+    <div class="flex flex-col w-1/2 mt-10 font-outfit">
       <div class="text-2xl">{{ $t("comments") }}</div>
       <ul>
         <li v-for="comment in comments" :key="comment.id">
