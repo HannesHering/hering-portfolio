@@ -8,7 +8,7 @@ import { computedAsync } from "@vueuse/core";
 const validationSchema = toTypedSchema(
   zod.object({
     name: zod.string().default(" "),
-    message: zod.string().min(1, { message: "Nachricht erforderlich" }),
+    message: zod.string({ message: "Nachricht erforderlich!" }).min(1, { message: "Nachricht erforderlich!" }),
   })
 );
 
@@ -66,27 +66,27 @@ const comments = computedAsync(async () => {
 
 <template>
   <div class="w-full flex flex-col justify-center items-center">
-    <div class="w-4/5 flex flex-col items-center justify-center">
+    <div class="w-2/5 flex flex-col items-center justify-center">
       <Form
         :validation-schema="validationSchema"
         id="form"
         @submit="onSubmit"
-        class="font-outfit text-lg mt-5 w-3/5"
+        class="font-outfit text-lg mt-5 w-full"
       >
         <div class="flex flex-col">
-          <label for="name">Name</label>
-          <Field id="name" name="name" />
-          <ErrorMessage name="name" />
+          <label class="text-1xl" for="name">Name</label>
+          <Field class="rounded-md" id="name" name="name" />
+          <ErrorMessage class="text-red-600" name="name" />
         </div>
         <div class="flex flex-col mt-2">
-          <label for="message">{{ $t("message") }}</label>
+          <label class="text-1xl" for="message">{{ $t("message") }}</label>
           <Field
             id="message"
             name="message"
             as="textarea"
-            class="h-32 min-h-8"
+            class="h-32 min-h-8 rounded-md"
           />
-          <ErrorMessage name="message" />
+          <ErrorMessage class="text-red-600" name="message" />
         </div>
         <button
           class="text-bg-primary bg-text-primary font-outfit font-bold text-base border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
@@ -95,11 +95,11 @@ const comments = computedAsync(async () => {
         </button>
       </Form>
     </div>
-    <div class="mt-5 w-2/5 font-outfit">
+    <div class="flex flex-col w-2/5 mt-10 font-outfit">
       <div class="text-2xl">{{ $t("comments") }}</div>
       <ul>
         <li v-for="comment in comments" :key="comment.id">
-          <div v-if="comment.project == routePath.project">
+          <div v-if="comment.project == routePath.project" class="w-full h-20 border rounded-md my-4 p-3">
             <strong>{{ comment.name }}:</strong> {{ comment.message }}
           </div>
         </li>

@@ -43,18 +43,18 @@ const localePath = useLocalePath()
 <template>
   <Form :validation-schema="validationSchema" id="form" @submit="onSubmit" class="font-outfit text-lg mt-5">
     <div class="flex flex-col">
-      <label for="email">E-Mail</label>
-      <Field id="email" name="email" type="email"/>
-      <ErrorMessage name="email"/>
+      <label class="text-1xl" for="email">E-Mail</label>
+      <Field class="rounded-md" id="email" name="email" type="email"/>
+      <ErrorMessage class="text-red-600" name="email"/>
     </div>
     <div class="flex flex-col mt-2">
-      <label for="subject">{{ $t("subject") }}</label>
-      <Field id="subject" name="subject"/>
+      <label class="text-1xl" for="subject">{{ $t("subject") }}</label>
+      <Field class="rounded-md" id="subject" name="subject"/>
     </div>
     <div class="flex flex-col mt-2">
-      <label for="message">{{ $t("message") }}</label>
-      <Field id="message" name="message" as="textarea" class="h-32 min-h-8"/>
-      <ErrorMessage name="message"/>
+      <label class="text-1xl" for="message">{{ $t("message") }}</label>
+      <Field id="message" name="message" as="textarea" class="h-32 min-h-8 rounded-md" />
+      <ErrorMessage class="text-red-600" name="message"/>
     </div>
     <button
       class="text-bg-primary bg-text-primary font-outfit font-bold text-base border rounded-md p-2 w-fit mt-5 hover:bg-accent-primary hover:border-accent-primary transition-all duration-300"
