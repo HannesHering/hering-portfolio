@@ -1,7 +1,8 @@
 <template>
   <div class="bg-bg-primary text-text-primary p-6">
     <Title>Projects - Hering</Title>
-    <div class="font-rekron text-5xl">
+    <div class="flex flex-row">
+      <div class="font-rekron text-5xl">
       {{ $t("projects") }}
       <svg
         class="h-4 mt-2"
@@ -10,6 +11,8 @@
       >
         <line x1="0" y1="0" x2="40" y2="0" stroke="#F6690C" stroke-width="1" />
       </svg>
+    </div>
+    <LanguageSwitcher />
     </div>
     <div class="flex flex-col justify-center items-center my-20">
       <div class="flex flex-col items-center justify-center">

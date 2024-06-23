@@ -53,7 +53,7 @@ const localePath = useLocalePath()
     </div>
     <div class="flex flex-col mt-2">
       <label for="message">{{ $t("message") }}</label>
-      <Field id="message" name="message" class="h-32"/>
+      <Field id="message" name="message" as="textarea" class="h-32 min-h-8"/>
       <ErrorMessage name="message"/>
     </div>
     <button

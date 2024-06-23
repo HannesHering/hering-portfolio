@@ -4,22 +4,25 @@
   <main>
     <div class="bg-bg-primary">
       <div class="text-text-primary p-6">
-        <div class="font-rekron text-5xl">
-          Projects
-          <svg
-            class="h-4 mt-2"
-            viewBox="0 0 100 1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="0"
-              y1="0"
-              x2="40"
-              y2="0"
-              stroke="#F6690C"
-              stroke-width="1"
-            />
-          </svg>
+        <div class="flex flex-row">
+          <div class="font-rekron text-5xl">
+            Projects
+            <svg
+              class="h-4 mt-2"
+              viewBox="0 0 100 1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="0"
+                y1="0"
+                x2="40"
+                y2="0"
+                stroke="#F6690C"
+                stroke-width="1"
+              />
+            </svg>
+          </div>
+          <LanguageSwitcher />
         </div>
       </div>
       <div class="w-full font-outfit text-text-primary text-justify">
@@ -43,14 +46,13 @@
         />
         <LikeButton />
       </div>
-      <CommentSection/>
+      <CommentSection />
       <div class="h-28"></div>
     </div>
   </main>
 </template>
 
 <style scoped>
-
 main :deep(.containermd) {
   @apply w-full flex-col flex justify-center items-center;
 }
@@ -64,7 +66,7 @@ main :deep(p) {
 }
 
 main :deep(.mainText) {
-  @apply  flex flex-col w-1/2 text-justify text-lg justify-center items-center;
+  @apply flex flex-col w-1/2 text-justify text-lg justify-center items-center;
 }
 
 main :deep(.date) {
